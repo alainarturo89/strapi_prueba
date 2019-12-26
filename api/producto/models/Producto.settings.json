@@ -1,0 +1,31 @@
+{
+  "connection": "mysql_prueba",
+  "collectionName": "producto",
+  "info": {
+    "name": "producto",
+    "description": "Tabla producto de la base de datos prueba..."
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "denominacion": {
+      "required": true,
+      "type": "string"
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal",
+      "default": "1000",
+      "required": true
+    },
+    "idproducto": {
+      "type": "integer",
+      "unique": true
+    }
+  }
+}
